@@ -85,6 +85,7 @@ public class PlayerMove : MonoBehaviour
     void Die() {
         Instantiate(iceCreamExplosion, transform.position, transform.rotation);
         myManager.isPlayerDead = true;
+        myManager.shouldEnemiesDie = true;
         Destroy(gameObject);
     }
 

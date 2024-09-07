@@ -70,6 +70,7 @@ public class Spawner : MonoBehaviour
     private IEnumerator spawnNewPlayer() {
         myManager.numOfEnemiesDefeated = 0;
         yield return new WaitForSeconds(3f);
+        myManager.shouldEnemiesDie = false;
         Instantiate(player);
     }
 

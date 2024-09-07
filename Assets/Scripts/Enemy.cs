@@ -37,7 +37,8 @@ public class Enemy : MonoBehaviour
             Die();
         }
 
-        if (myManager.isPlayerDead) {
+        if (myManager.shouldEnemiesDie) {
+            print("player dead");
             Die();
         }
     }
